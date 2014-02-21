@@ -38,6 +38,7 @@ if which git >/dev/null; then
   git config --global branch.autosetuprebase always
   git config --global fetch.prune true
   git config --global grep.lineNumber true
+  git config --global init.templatedir ${PATH_TO_FILE}/template_dir
 
   git config --global alias.vimdiff difftool
   git config --global alias.branchdiff '!git diff $(git merge-base master HEAD)'
